@@ -1,2 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#EAFAF1">
+<div class="wrapper">
+    <form class="form1" action="http://google.com">
+        <div class="formtitle">
+            Enter the password to proceed
+        </div>
 
+        <div class="input nobottomborder">
+            <div class="inputtext">
+                Password:
+            </div>
 
+            <div class="inputcontent">
+                <input type="password" id="password" /><br />
+            </div>
+        </div>
+
+        <div class="buttons">
+            <input class="orangebutton" type="submit" value="Login" onclick="if (document.getElementById('password').value == 'hello') location.href='small.html'; else alert('Wrong Password!');" />
+        </div>
+    </form>
+</div>
+</body>
+</html>
