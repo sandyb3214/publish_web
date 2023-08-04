@@ -10,7 +10,7 @@
     const webIntegrationId = "Qp6VPolD8Is_KKo1vIOJqzJo7I-VfYym";
     function login() {
       function isLoggedIn() {
-        return fetch("https://yourtenant.eu.qlikcloud.com/api/v1/users/me", {
+        return fetch("https://w2y05w7rlxxdcch.sg.qlikcloud.com/api/v1/users/me", {
           method: 'GET',
           mode: 'cors',
           credentials: 'include',
@@ -25,7 +25,7 @@
       return isLoggedIn().then(loggedIn => {
         if (!loggedIn) {
           // check login
-            window.top.location.href = "https://yourtenant.eu.qlikcloud.com/login?qlik-web-integration-id=" + webIntegrationId + "&returnto=" + top.location.href;
+            window.top.location.href = "https://w2y05w7rlxxdcch.sg.qlikcloud.com/login?qlik-web-integration-id=" + webIntegrationId + "&returnto=" + top.location.href;
           throw new Error('not logged in');
         }
       });
